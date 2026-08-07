@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.classList.replace('no-js','js');</script>
+  <title>Mudanzas Cruz | Mudanzas Residenciales y Comerciales en CDMX</title>
+  <meta name="description" content="Mudanzas Cruz: mudanzas residenciales y comerciales en Ciudad de México y área metropolitana. Embalaje profesional, equipo capacitado y atención 24/7 por WhatsApp. Cotiza tu mudanza sin estrés ni sorpresas.">
+  <meta name="keywords" content="mudanzas CDMX, mudanzas Ciudad de México, empresa de mudanzas, mudanzas residenciales, mudanzas comerciales, embalaje de muebles, mudanzas área metropolitana, Mudanzas Cruz">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Mudanzas Cruz | Mudanzas Residenciales y Comerciales en CDMX">
+  <meta property="og:description" content="Embalaje profesional, equipo capacitado y atención 24/7 por WhatsApp. Mudanzas residenciales y comerciales en Ciudad de México y área metropolitana.">
+  <meta property="og:image" content="imagenes/hero-poster.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23D50032'/%3E%3Ctext x='24' y='31' text-anchor='middle' font-size='19' font-weight='800' font-family='sans-serif' fill='%23ffffff'%3EMC%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts: Montserrat para encabezados, Open Sans para cuerpo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER — pantalla de carga con logo y transición impactante
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <img src="imagenes/logo-mudanzas-cruz.png" alt="" class="loader-logo">
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando<span class="dots"></span></span>
+  </div>
+  <div id="loader-shutter" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Mudanzas Cruz — inicio">
+          <img src="imagenes/logo-mudanzas-cruz.png" alt="Mudanzas Cruz" class="nav-logo-img">
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Por qué elegirnos</a></li>
+            <li><a href="#ambientes">Servicios</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://api.whatsapp.com/send/?phone=525510598484&text=Hola%2C%20quiero%20cotizar%20una%20mudanza."
+           target="_blank" rel="noopener noreferrer"
+           class="btn-whatsapp nav-cta">
+          <i class="fa-brands fa-whatsapp"></i>
+          Cotizar por WhatsApp
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="mob-backdrop"></div>
+  <nav id="mob-menu" aria-label="Menú móvil">
+    <a href="#why">Por qué elegirnos</a>
+    <a href="#ambientes">Servicios</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+    <a href="https://api.whatsapp.com/send/?phone=525510598484&text=Hola%2C%20quiero%20cotizar%20una%20mudanza." target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp →</a>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Video de fondo con efecto parallax (movimiento real) -->
+      <div class="hero-bg" aria-hidden="true">
+        <video class="hero-bg-video" autoplay muted loop playsinline poster="imagenes/hero-poster.jpg">
+          <source src="imagenes/mudanzas-cruz-equipo-embalaje.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas id="hero-canvas" class="particles-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Mudanzas Cruz · CDMX y Área Metropolitana
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Tu mudanza,</span></span>
+            <span class="line"><span>sin estrés</span></span>
+            <span class="line"><span class="accent">ni sorpresas.</span></span>
+          </h1>
+
+          <p class="hero-sub" id="hero-sub">
+            En <strong>Mudanzas Cruz</strong> protegemos, trasladamos y entregamos tus bienes con un equipo capacitado y experimentado. Servicio profesional de mudanzas residenciales y comerciales en Ciudad de México y su área metropolitana.
+          </p>
+
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="https://api.whatsapp.com/send/?phone=525510598484&text=Hola%2C%20quiero%20cotizar%20mi%20mudanza."
+               target="_blank" rel="noopener noreferrer" class="btn-gold">
+              Cotizar mi Mudanza
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-truck-fast" style="font-size:15px; color:var(--gray-200);"></i>
+              Ver Servicios
+            </a>
+          </div>
+
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-clock"></i>
+              Atendemos 24/7
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-location-dot"></i>
+              Cobertura CDMX y Área Metropolitana
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-people-carry-box"></i>
+              Equipo Capacitado y Experimentado
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Por qué elegirnos
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="why-bg" aria-hidden="true">
+        <img class="why-bg-img" src="imagenes/ropero-forrado-plastico-stretch.jpg" alt="">
+      </div>
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por qué elegirnos</div>
+            <h2 class="why-quote" id="why-heading">
+              Una mudanza no perdona la improvisación…
+              <em> por eso la hacemos con método y cuidado.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            En Mudanzas Cruz combinamos profesionalismo, atención al cliente y técnicas de embalaje adecuadas para que tu traslado —residencial o comercial— sea una experiencia libre de estrés y sorpresas.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3>Profesionalismo y Compromiso</h3>
+            <p>Cada mudanza se ejecuta con compromiso total hacia la profesionalidad y la satisfacción de nuestros clientes, del primer contacto a la entrega final.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h3>Atención al Cliente Directa</h3>
+            <p>Hablas directo con nuestro equipo por WhatsApp, sin intermediarios ni líneas de espera, para resolver dudas en cada paso de tu mudanza.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-people-carry-box"></i>
+            </div>
+            <h3>Equipo Capacitado y Experimentado</h3>
+            <p>Personal entrenado en técnicas de manejo de carga, forrado y embalaje para trasladar tus bienes con el máximo cuidado.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>Transparencia sin Sorpresas</h3>
+            <p>Cotizamos claro desde el inicio para que tu mudanza sea una experiencia sin estrés ni imprevistos de último momento.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIOS
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Nuestros servicios</div>
+            <h2 class="section-title" id="amb-heading">
+              Mudanzas residenciales<br>
+              <span class="gold">y comerciales en CDMX</span>
+            </h2>
+            <p style="color:var(--gray-600); margin-top:16px; font-size:15.5px; max-width:460px; line-height:1.7;">
+              Servicio profesional de mudanzas, con fotografías reales de nuestro equipo en Ciudad de México y su área metropolitana.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Qué necesita tu mudanza?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <div class="amb-card reveal">
+            <img class="amb-img" src="imagenes/equipo-cargando-sillon-sala.jpg"
+              alt="Equipo de Mudanzas Cruz cargando un sillón forrado en una sala">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" style="background:rgba(213,0,50,0.18); border-color:rgba(213,0,50,0.4);" aria-hidden="true">
+                <i class="fa-solid fa-house" style="color:#ff8aa3;"></i>
+              </div>
+              <h3>Mudanzas Residenciales</h3>
+              <p>Trasladamos el mobiliario de tu casa o departamento con cuidado y orden, cumpliendo los tiempos acordados.</p>
+              <div class="amb-temp">Hogares y Departamentos</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d1">
+            <img class="amb-img" src="imagenes/equipo-bajando-muebles-fachada.jpg"
+              alt="Equipo de mudanzas trasladando muebles frente a la fachada de un inmueble">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" style="background:rgba(0,41,150,0.2); border-color:rgba(0,41,150,0.45);" aria-hidden="true">
+                <i class="fa-solid fa-briefcase" style="color:#9fb3ec;"></i>
+              </div>
+              <h3>Mudanzas Comerciales y de Oficina</h3>
+              <p>Reubicamos oficinas y negocios minimizando tiempos de inactividad, con un equipo coordinado para cada etapa.</p>
+              <div class="amb-temp">Negocios y Oficinas</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d2">
+            <img class="amb-img" src="imagenes/rollo-plastico-burbuja-termico-embalaje.jpg"
+              alt="Rollo de plástico burbuja térmico usado para embalaje profesional de muebles">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.3);" aria-hidden="true">
+                <i class="fa-solid fa-box" style="color:#e8e8e8;"></i>
+              </div>
+              <h3>Embalaje y Protección Profesional</h3>
+              <p>Protegemos cada mueble y objeto con plástico stretch, mantas y material de embalaje adecuado antes de moverlo.</p>
+              <div class="amb-temp">Cuidado de tus Bienes</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d3">
+            <img class="amb-img" src="imagenes/camion-mudanzas-cruz-cargado-calle.jpg"
+              alt="Camión de Mudanzas Cruz cargado y listo para el traslado en calle de CDMX">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" style="background:rgba(213,0,50,0.18); border-color:rgba(213,0,50,0.4);" aria-hidden="true">
+                <i class="fa-solid fa-truck-fast" style="color:#ff8aa3;"></i>
+              </div>
+              <h3>Transporte Especializado</h3>
+              <p>Contamos con unidades y equipo capacitado para trasladar tu mobiliario de forma segura dentro de la CDMX y su área metropolitana.</p>
+              <div class="amb-temp">Traslado Seguro</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Tu mudanza, paso a paso <span class="gold">sin complicaciones</span>
+          </h2>
+          <p>Así acompañamos cada mudanza, desde la primera cotización hasta que tus bienes llegan a su nuevo destino.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">01</div>
+            <h3>Cotización por WhatsApp</h3>
+            <p>Cuéntanos qué necesitas mover y te respondemos con disponibilidad y presupuesto directo por WhatsApp.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">02</div>
+            <h3>Embalaje y Protección</h3>
+            <p>Nuestro equipo forra y protege cada mueble con el material adecuado antes de subirlo al camión.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">03</div>
+            <h3>Traslado y Entrega</h3>
+            <p>Trasladamos tus bienes con cuidado hasta el destino acordado, cumpliendo los tiempos pactados.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Datos de Mudanzas Cruz">
+      <div class="stats-bg" aria-hidden="true">
+        <img class="stats-bg-img" src="imagenes/interior-camion-mudanza-cargado.jpg" alt="">
+      </div>
+      <canvas id="stats-canvas" class="particles-canvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="100"><span class="count-val">0</span><span class="suffix">%</span></div>
+            <div class="stat-lbl">Mobiliario protegido con<br>embalaje profesional</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="24"><span class="count-val">0</span><span class="suffix">/7</span></div>
+            <div class="stat-lbl">Atención disponible todos<br>los días de la semana</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="360"><span class="count-val">0</span><span class="suffix">°</span></div>
+            <div class="stat-lbl">Servicio integral: mudanzas<br>residenciales y comerciales</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="2"><span class="count-val">0</span></div>
+            <div class="stat-lbl">Líneas de WhatsApp directas<br>para cotizar al instante</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         EMBALAJE Y PROTECCIÓN DESTACADA
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <div class="reveal">
+            <div class="label">Cuidado profesional</div>
+            <h2 class="section-title" id="prod-heading">
+              Protegemos cada mueble<br>
+              <span class="gold">como si fuera nuestro</span>
+            </h2>
+            <p class="producto-lead">
+              Antes de subir un solo mueble al camión, lo forramos y protegemos con el material adecuado. Así garantizamos que tus bienes lleguen en las mismas condiciones en que salieron.
+            </p>
+
+            <ul class="feature-rows" aria-label="Técnicas de embalaje y cuidado">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div>
+                <div>
+                  <h4>Plástico Stretch y Mantas</h4>
+                  <p>Envolvemos muebles, colchones y superficies delicadas para evitar golpes y rozaduras durante el traslado.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-box-open"></i></div>
+                <div>
+                  <h4>Embalaje de Objetos Frágiles</h4>
+                  <p>Cajas, plástico burbuja y material térmico para proteger piezas delicadas y objetos de valor.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-people-carry-box"></i></div>
+                <div>
+                  <h4>Manejo Profesional de Carga</h4>
+                  <p>Técnicas correctas de carga y acomodo para trasladar mobiliario pesado sin dañarlo.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                  <h4>Seguimiento por WhatsApp</h4>
+                  <p>Mantenemos comunicación directa contigo durante todo el proceso de tu mudanza.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Materiales y atención de Mudanzas Cruz">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Stretch</span>
+                <span class="spec-name">Plástico protector</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Mantas</span>
+                <span class="spec-name">Protección de superficies</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Burbuja</span>
+                <span class="spec-name">Embalaje de frágiles</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">24/7</span>
+                <span class="spec-name">Atención vía WhatsApp</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <img class="led-panel-body" src="imagenes/tecnicos-mudanzas-cruz-forrando-mueble.jpg"
+                   alt="Técnicos de Mudanzas Cruz forrando un mueble con plástico protector en un domicilio">
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Equipo en trabajo
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-brands fa-whatsapp" style="color:#3DDC84;"></i>
+                Atención 24/7
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         ¿A QUIÉN ATENDEMOS?
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">¿A quién atendemos?</div>
+          <h2 class="section-title" id="sec-heading">
+            Mudanzas para cada <span class="gold">tipo de cliente</span>
+          </h2>
+          <p>Residencial o comercial, adaptamos el servicio a la escala de tu mudanza dentro de la Ciudad de México y su área metropolitana.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-house sector-icon" aria-hidden="true"></i>
+            <h3>Hogares</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-building sector-icon" aria-hidden="true"></i>
+            <h3>Oficinas y Negocios</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-city sector-icon" aria-hidden="true"></i>
+            <h3>Edificios y Condominios</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-map-location-dot sector-icon" aria-hidden="true"></i>
+            <h3>CDMX y Área Metropolitana</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         GALERÍA — trabajos reales
+    ══════════════════════════════════════════════════ -->
+    <section id="galeria" aria-labelledby="gal-heading">
+      <div class="container">
+
+        <div class="gallery-hdr reveal">
+          <div>
+            <div class="label">Trabajos reales</div>
+            <h2 class="section-title" id="gal-heading">
+              Así trabajamos <span class="gold">cada mudanza</span>
+            </h2>
+          </div>
+          <p>Fotografías reales de nuestro equipo, nuestro camión y el cuidado que ponemos en cada traslado.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="g-item g-big reveal">
+            <img src="imagenes/interior-camion-mudanza-cargado.jpg" alt="Interior del camión de Mudanzas Cruz cargado y asegurado para el traslado" loading="lazy">
+            <div class="g-cap"><span>Nuestro camión</span>Mobiliario cargado y asegurado para el traslado</div>
+          </div>
+          <div class="g-item reveal">
+            <img src="imagenes/mudanza-embalaje-muebles-camion-01.jpg" alt="Colchón y muebles forrados listos para viajar en el camión" loading="lazy">
+            <div class="g-cap"><span>Embalaje</span>Colchón y muebles forrados listos para viajar</div>
+          </div>
+          <div class="g-item reveal d1">
+            <img src="imagenes/equipo-cargando-mueble-forrado-calle.jpg" alt="Equipo de Mudanzas Cruz trasladando un mueble forrado en la calle" loading="lazy">
+            <div class="g-cap"><span>Equipo</span>Traslado de mueble forrado en vía pública</div>
+          </div>
+          <div class="g-item reveal d2">
+            <img src="imagenes/muebles-madera-embalados-camion.jpg" alt="Muebles de madera protegidos y acomodados dentro del camión" loading="lazy">
+            <div class="g-cap"><span>Transporte</span>Muebles de madera protegidos en el camión</div>
+          </div>
+          <div class="g-item reveal">
+            <img src="imagenes/roperos-forrados-interior-camion.jpg" alt="Roperos forrados acomodados y asegurados dentro del camión" loading="lazy">
+            <div class="g-cap"><span>Carga</span>Roperos acomodados y asegurados en el camión</div>
+          </div>
+          <div class="g-item reveal d1">
+            <img src="imagenes/tecnico-uniforme-mudanzas-cruz-silla.jpg" alt="Técnico con uniforme de Mudanzas Cruz trasladando una silla" loading="lazy">
+            <div class="g-cap"><span>Nuestro equipo</span>Técnico Mudanzas Cruz trasladando mobiliario</div>
+          </div>
+          <div class="g-item reveal d2">
+            <img src="imagenes/ropero-forrado-plastico-stretch.jpg" alt="Ropero forrado con plástico stretch antes de su traslado" loading="lazy">
+            <div class="g-cap"><span>Protección</span>Ropero forrado con plástico stretch</div>
+          </div>
+          <div class="g-item reveal d3">
+            <img src="imagenes/rollo-plastico-burbuja-termico-embalaje.jpg" alt="Rollo de plástico burbuja térmico para embalaje de muebles delicados" loading="lazy">
+            <div class="g-cap"><span>Material</span>Plástico burbuja térmico para embalaje delicado</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CTA BAND
+    ══════════════════════════════════════════════════ -->
+    <section id="cta-band" aria-label="Cotiza tu mudanza">
+      <div class="cta-band-inner">
+        <div class="cta-band-bg" aria-hidden="true">
+          <img class="cta-band-bg-img" src="imagenes/mueble-antiguo-embalado-camion.jpg" alt="">
+        </div>
+        <canvas id="cta-particles" class="particles-canvas" aria-hidden="true"></canvas>
+        <div class="cta-band-content reveal">
+          <div class="label">¿Ya tienes fecha para tu mudanza?</div>
+          <h2 class="word-reveal">Cotiza tu mudanza hoy mismo por WhatsApp</h2>
+          <p>Sin filas ni llamadas eternas. Cuéntanos qué necesitas mover y te respondemos con disponibilidad y presupuesto claro.</p>
+          <a href="https://api.whatsapp.com/send/?phone=525510598484&text=Hola%2C%20quiero%20cotizar%20mi%20mudanza." target="_blank" rel="noopener noreferrer" class="btn-gold">
+            <i class="fa-brands fa-whatsapp"></i>
+            Cotizar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Solicita tu <span class="gold">cotización</span>
+          </h2>
+          <p>Escríbenos por WhatsApp o llama directamente. Te respondemos rápido, con presupuesto claro y sin sorpresas.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención Directa</h3>
+            <p class="ci-sub">Mudanzas Cruz — mudanzas residenciales y comerciales en Ciudad de México y área metropolitana.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Cobertura</h4>
+                  <p>Atendemos Ciudad de México<br>y su área metropolitana.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p>
+                    <a href="tel:+525510598484">55 1059 8484</a><br>
+                    <a href="tel:+525552470287">55 5247 0287</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Horario</h4>
+                  <p>Atendemos 24/7, todos los días de la semana.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Envíanos la ubicación de tu mudanza y te cotizamos en minutos.</p>
+                  <a href="https://api.whatsapp.com/send/?phone=525510598484&text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20cotizar%20una%20mudanza." target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="ci-map">
+              <iframe src="https://www.google.com/maps?q=Ciudad+de+M%C3%A9xico&z=11&output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="Cobertura de Mudanzas Cruz en Ciudad de México y área metropolitana"></iframe>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://api.whatsapp.com/send/?phone=525510598484" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp línea 1"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://api.whatsapp.com/send/?phone=525552470287" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp línea 2"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="tel:+525510598484" aria-label="Llamar a Mudanzas Cruz"><i class="fa-solid fa-phone"></i></a>
+            </div>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar Cotización</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas mover?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Mudanza residencial</option>
+                    <option>Mudanza comercial / oficina</option>
+                    <option>Embalaje y protección de muebles</option>
+                    <option>Mudanza local dentro de CDMX</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle de tu mudanza</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Cuéntanos desde dónde y hacia dónde te mudas, tipo de inmueble y fecha aproximada…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Cotizar por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar se abrirá WhatsApp con tu mensaje listo para enviarnos. Nunca se envía por correo.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-logo">
+            <img src="imagenes/logo-mudanzas-cruz.png" alt="Mudanzas Cruz" class="footer-logo-img">
+          </div>
+          <p class="footer-tagline">Tu mudanza, sin estrés ni sorpresas. Servicio profesional de mudanzas en Ciudad de México y área metropolitana.</p>
+          <div class="footer-badge"><i class="fa-solid fa-shield-halved"></i> Equipo capacitado y experimentado</div>
+          <div class="footer-badge"><i class="fa-brands fa-whatsapp"></i> Atención 24/7 por WhatsApp</div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#why">Por qué elegirnos</a></li>
+            <li><a href="#ambientes">Servicios</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="tel:+525510598484"><i class="fa-solid fa-phone" style="margin-right:8px; color:var(--red);"></i>55 1059 8484</a></li>
+            <li><a href="tel:+525552470287"><i class="fa-solid fa-phone" style="margin-right:8px; color:var(--red);"></i>55 5247 0287</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=525510598484" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" style="margin-right:8px; color:var(--red);"></i>WhatsApp directo</a></li>
+            <li><a href="#contacto"><i class="fa-solid fa-location-dot" style="margin-right:8px; color:var(--red);"></i>CDMX y Área Metropolitana</a></li>
+          </ul>
+          <div class="footer-socials" style="margin-top:22px;">
+            <a href="https://api.whatsapp.com/send/?phone=525510598484" target="_blank" rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp línea 1"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=525552470287" target="_blank" rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp línea 2"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="tel:+525510598484" class="footer-soc" aria-label="Llamar a Mudanzas Cruz"><i class="fa-solid fa-phone"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-inner">
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Mudanzas Cruz. Todos los derechos reservados. Ciudad de México y Área Metropolitana.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://api.whatsapp.com/send/?phone=525510598484&text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20cotizar%20una%20mudanza."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
